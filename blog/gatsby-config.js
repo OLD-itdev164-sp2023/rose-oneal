@@ -9,15 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
-    description: `ITDEV-164 Gatsby Blog`,
-    author: `Rose O'Neal`,
+    title: `Gatsby Default Starter`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
-    contact: {
-      name: `Rose O'Neal`,
-      company: `Blogs Inc`,
-      address: `PO Box 1234`
-    }
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,13 +23,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `jeel2rafwmkf`,
-        accessToken: `G_MwdW1WP3UDEqmxX0fdKuO9iZrWPQnmPt-czV8z4tQ`
-      }
-    }
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
