@@ -10,12 +10,12 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Blog`,
-    description: `ITDEV-164 Gatsby Blog`,
+    description: `ITDEV-164 Gatsby Blog.`,
     author: `Rose O'Neal`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     contact: {
       name: `Rose O'Neal`,
-      company: `Blogs Inc`,
+      company: `Blogs Inc.`,
       address: `PO Box 1234`
     }
   },
@@ -26,6 +26,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: "ep2c17b33y90", 
+        accessToken: "yL-L5LdyjzO2b73CSL1_scM-T-bA0rHNzuI5Hun9_IQ"
       },
     },
     `gatsby-transformer-sharp`,
