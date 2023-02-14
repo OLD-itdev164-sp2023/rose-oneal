@@ -30,6 +30,7 @@ module.exports = {
         accessToken: `${process.env.ACCESS_TOKEN}`
       }
     },
+    `gatsby-transformer-remar`
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

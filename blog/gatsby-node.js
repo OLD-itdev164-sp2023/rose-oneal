@@ -1,4 +1,3 @@
-
 const path = require(`path`);
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -6,7 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
   return new Promise((resolve, reject) => {
     graphql(`
       {
-        allContentfulBlogPost{
+        allContentfulBlogPost {
           edges {
             node {
               id
