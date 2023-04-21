@@ -2,12 +2,12 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { BaseContainer } from "../BaseContainer";
 
-export const ListItem = ({ childern, ...rest }) => (
+export const ListItem = ({ children, ...rest }) => (
     <BaseContainer as='li' {...rest}>
-        {childern}
+        {children}
     </BaseContainer>
 )
 
 ListItem.propTypes = {
-    childern: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired
 }

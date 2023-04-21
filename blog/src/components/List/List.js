@@ -2,18 +2,18 @@ import React from "react";
 import PropTypes from 'prop-types';
 import { BaseContainer } from "../BaseContainer";
 
-export const List = ({ childern, ...rest }) => (
+export const List = ({ children, ...rest }) => (
     <BaseContainer
-    flex
-    flexDirextion='column'
-    mx='auto'
-    as='ul'
-    {...rest}
+        flex
+        flexDirextion='column'
+        mx='auto'
+        as='ul'
+        {...rest}
     >
-        {childern}
+        {children}
     </BaseContainer>
 )
 
 List.propTypes = {
-    childern: PropTypes.node.isRequired
+    children: PropTypes.node.isRequired
 }
