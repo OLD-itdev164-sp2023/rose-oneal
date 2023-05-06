@@ -25,9 +25,6 @@ const IndexPage = ({ data }) => (
         data.allContentfulBlogPost.edges.map(edge => (
           <Card width={256} p={3} key={edge.node.id}>
             <Link to={edge.node.slug}>
-              <GatsbyImage
-              image={edge.node.heroImage.gatsbyImageData}
-              />
               </Link>
               <Heading>{edge.node.title}</Heading>
             <div>
